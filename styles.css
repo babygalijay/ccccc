@@ -1,0 +1,119 @@
+/* Custom Fonts for Logo */
+    .logo {
+      font-family: 'Indie Flower', cursive;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: rgba(111, 0, 0, 1);
+      line-height: 1.2;
+    }
+
+    .logo span {
+      font-family: 'Ingrid Darling', cursive;
+      font-size: 1rem;
+      display: block;
+      color: rgba(111, 0, 0, 1);
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('https://res.cloudinary.com/dkoeutxie/image/upload/v1756281316/93583f8059c138fb9f8d459a7a11acc128fbe165_g5ktay.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      padding: 2rem;
+    }
+
+    .card-section {
+      background: rgba(255, 255, 255);
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 700px;
+      left: 629px;
+      width: 603px;
+      right: 200px;
+      
+    }
+
+    .card-section h1 {
+      color: rgba(111, 0, 0, 1);
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      font-size: 2.5rem;
+    }
+
+    .card-section p {
+      color: #000;
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .card-button img {
+      max-width: 160px;
+      height: auto;
+    }
+
+    /* Adjust hamburger in center for xs screens */
+    @media (max-width: 576px) {
+      .navbar-toggler {
+        margin: 0 auto;
+      }
+      .card-section h1 {
+        font-size: 1.8rem;
+      }
+      .card-section p {
+        font-size: 0.9rem;
+      }
+    }
+    .browse {
+         color: rgba(111, 0, 0, 1);
+         width: 279;
+         height: 28;
+         opacity: 1;
+         top: 953px;
+         left: 514px;
+         font-family:'lato';
+         font-weight: 600px;
+         font-style: 'SemiBold';
+         font-size: 33px;
+         line-height: 27px;
+
+    }
+    .paragraph {
+     height: 27px;
+     opacity: 1;
+     top: 989px;
+     left: 393px;
+     font-family: 'Lato';
+     font-weight: 600px;
+     font-style: 'SemiBold';
+     font-size: 24px;
+     line-height: 27px;
+     letter-spacing: 0%;
+
+
+    }
+
+
+    .image-row {
+  display: flex;               /* places them in one row */
+  justify-content: center;     /* centers them */
+  gap: 20px;                   /* space between images */
+  align-items: flex-start;     /* keeps top edges aligned */
+  margin: 20px 0;
+}
+
+.image-card {
+  text-align: center;
+}
+
+.image-card img {
+  width: 250px;                /* set same width for all */
+  height: auto;
+  border-radius: 8px;          /* optional rounded corners */
+  object-fit: cover;
+  display: block;
+}
