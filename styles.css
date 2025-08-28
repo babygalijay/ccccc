@@ -67,6 +67,7 @@
       .card-section p {
         font-size: 0.9rem;
       }
+      /* BROWSE */
     }
     .browse {
          color: rgba(111, 0, 0, 1);
@@ -80,8 +81,8 @@
          font-style: 'SemiBold';
          font-size: 33px;
          line-height: 27px;
-
     }
+
     .paragraph {
      height: 27px;
      opacity: 1;
@@ -95,7 +96,6 @@
      letter-spacing: 0%;
     }
 
-/* Category-specific image sizes */
 .Living img {
   border-radius: 0;
   width: 388px;
@@ -122,6 +122,7 @@
  opacity: 1;
 }
 
+/*Best Selling*/
 .Best {
   width: 198;
   height: 28;
@@ -228,4 +229,217 @@ letter-spacing: 0%;
   color: #fff;
 
 }
+/* Inspirations */
+.inspiration {
+  padding: 40px 20px;
+  background: #fff;
+  color: rgba(111, 0, 0, 1);
+}
 
+.inspiration h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Masonry Grid using columns */
+.masonry-grid {
+  column-count: 4;       /* number of columns */
+  column-gap: 15px;      /* space between columns */
+}
+
+.grid-item {
+  display: inline-block; /* important for column layout */
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;          /* keep natural image height */
+  display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Button */
+.btn-learn {
+  padding: 14px 36px;
+  background: #fff;
+  color: rgba(111, 0, 0, 1);
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+@media (max-width: 992px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+@media (max-width: 576px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
+ /*Footer*/
+
+ .footer {
+  background: rgba(241, 238, 238, 1);
+  color: rgba(0, 0, 0, 1);
+  padding: 50px 20px;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Left */
+.footer-left .logo h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-family: 'Indie Flower', cursive; /* playful handwritten font */
+  font-weight: 400px;     /* normal */
+  font-style: normal;   /* "Regular" → normal */
+  font-size: 36px;      /* big size for logo/header */
+  line-height: 1;       /* same as font size, tight spacing */
+  letter-spacing: 0;    /* no extra spacing */
+}
+
+.footer-left .logo span {
+  font-family: 'Ingrid Darling', cursive;
+  color:rgba(111, 0, 0, 1); /* highlight */
+  font-weight: 400;       /* normal weight */
+  font-style: normal;     /* "Regular" means normal (not italic) */
+  font-size: 20px;        /* text size */
+  line-height: 100%;      /* same as the font size → tight vertical spacing */
+  letter-spacing: 0;      /* no extra spacing between letters */
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.social-icons img {
+  width: 28px;   /* adjust size */
+  height: 28px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  filter: none; /* show original color on hover */
+}
+
+
+/* Center nav links */
+.footer-center {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  
+}
+.footer-center ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-center li {
+  margin: 8px 0;
+}
+.footer-center a {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 100%;
+  font-style: 'lato';
+  text-decoration: none;
+}
+/* Right Newsletter */
+.footer-right h3 {
+  margin-bottom: 10px;
+}
+.footer-right p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.newsletter-form {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 428px;
+height: 39px;
+top: 4522px;
+left: 865px;
+opacity: 1;
+border-radius: 24.5px;
+
+}
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  flex: 1;
+}
+.newsletter-form button {
+  color: #fff;
+  background: rgba(147, 64, 64, 1); /* brand color */
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 25px;   /* fully rounded */
+  padding: 10px 24px;    /* gives it some breathing space */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+  .footer .container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-center {
+    grid-column: span 2;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .footer .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .footer-center {
+    flex-direction: column;
+    align-items: center;
+  }
+  .newsletter-form {
+    flex-direction: column;
+  }
+  .newsletter-form input,
+  .newsletter-form button {
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 100%;
+  }
+}
